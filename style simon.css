@@ -18,3 +18,12 @@
 	width: 100px;
 	height: 100px;
 }
+body {
+	background-color:black;
+}
+#randomcolour {
+	color: white;
+}
+#clicked {
+	color: white;
+}

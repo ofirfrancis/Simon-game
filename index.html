@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>simon game</title>
+		<title>Simon game</title>
+		<meta name="author" content = "Ofir Francis"/>
 		<link rel = "shortcut icon" href = "C:\Users\ofir0\Documents\Simon-game\simon picture.ico"/>
 		<link type = "text/css" rel = "stylesheet" href = "style%20simon.css"/>
 	</head>
 	<body>
-		<button id = "blue" onclick = "blue()"></button>
-		<button id = "red" onclick = "red()"></button>
-		<button id = "yellow" onclick = "yellow()"></button>
-		<button id = "green" onclick = "green()"></button>
+		<button id = "blue" onclick = "addToClicked('blue')"></button>
+		<button id = "red" onclick = "addToClicked('red')"></button>
+		<button id = "yellow" onclick = "addToClicked('yellow')"></button>
+		<button id = "green" onclick = "addToClicked('green')"></button>
 		<button id = "start" onclick = "start()">Start</button>
 		<p id = "randomcolour">123</p>
 		<p id = "clicked">321</p>
-		<script src = "js%20simon.js"></script>
+		<script src = "js-simon.js"></script>
 	</body>
 </html>
