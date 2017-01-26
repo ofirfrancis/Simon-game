@@ -7,13 +7,18 @@
 		<link type = "text/css" rel = "stylesheet" href = "style%20simon.css"/>
 	</head>
 	<body>
-		<button id = "blue" onclick = "addToClicked('blue')"></button>
-		<button id = "red" onclick = "addToClicked('red')"></button>
-		<button id = "yellow" onclick = "addToClicked('yellow')"></button>
-		<button id = "green" onclick = "addToClicked('green')"></button>
+		<div id = "gameWrapper">
+		<h1>Simon</h1>
+		<div id = "buttonsWrapper">
+			<button id = "blue" onclick = "addToClicked('blue')"></button>
+			<button id = "red" onclick = "addToClicked('red')"></button>
+			<button id = "yellow" onclick = "addToClicked('yellow')"></button>
+			<button id = "green" onclick = "addToClicked('green')"></button>
+		</div>
 		<button id = "start" onclick = "start()">Start</button>
 		<p id = "randomcolour">123</p>
 		<p id = "clicked">321</p>
+		</div>
 		<script src = "js-simon.js"></script>
 	</body>
 </html>

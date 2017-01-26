@@ -2,7 +2,11 @@ var colours = ["blue","red","yellow","green"];
 var random = [];
 var clicked = [];
 var numOfButtons = 3;
-var x = 0
+var x = 0;
+var soundRed = new Audio("http://www.kellyking.me/projects/simon/sounds/1.mp3");
+var soundBlue = new Audio("http://www.kellyking.me/projects/simon/sounds/2.mp3");
+var soundYellow = new Audio("http://www.kellyking.me/projects/simon/sounds/3.mp3");
+var soundGreen = new Audio("http://www.kellyking.me/projects/simon/sounds/4.mp3");
 function start(){
 	random = [];
 	clicked = [];
@@ -11,13 +15,23 @@ function start(){
 		random.push(colours[Math.floor(Math.random() * colours.length)]);
 	}
 	document.getElementById("randomcolour").innerHTML = random;
+	x = 0;
 	callFlash()
 }
 function flash(button){
 	button.style.backgroundColor = "white";
+	/*if (button = "red") {
+		soundRed.play;
+	}else if (button = "blue") {
+		soundBlue.play;
+	}else if (button = "yellow") {
+		soundYellow.play;
+	}else if (button = "green") {
+		soundGreen.play;
+	}*/
 	setTimeout(function() {
 		button.style.backgroundColor = button.getAttribute("id");
-	},500);
+	},300);
 	
 }
 
@@ -64,7 +78,7 @@ function callFlash(){
 			x++;
 			callFlash()
 		}
-	}, 1500);
+	}, 800);
 	
 	
 		/*

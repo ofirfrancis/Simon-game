@@ -1,19 +1,19 @@
-#blue{
+#blue {
 	background-color: blue;
 	width: 100px;
 	height: 100px;
 }
-#red{
+#red {
 	background-color: red;
 	width: 100px;
 	height: 100px;
 }
-#yellow{
+#yellow {
 	background-color: yellow;
 	width: 100px;
 	height: 100px;
 }
-#green{
+#green {
 	background-color: forestgreen;
 	width: 100px;
 	height: 100px;
@@ -26,4 +26,31 @@ body {
 }
 #clicked {
 	color: white;
+}
+button {
+	display: inline-block;
+
+}
+img {
+	height: 100%;
+	width: 100%;
+	border: 2px solid white;
+}
+#buttonsWrapper {
+	margin: 0 auto;
+	width: 204px;
+	height: 202px;
+}
+#gameWrapper {
+	height: 100%;
+	width: 100%;
+}
+h1 {
+	color: red;
+	font-size: 3em;
+	text-align: center;
+}
+#start {
+	width: 7vw;
+	height: 7vh;
 }
